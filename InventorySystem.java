@@ -2,8 +2,8 @@ package MotorPH_Inventory_System;
 
 import java.util.LinkedList;
 /*
-This is a sample code implementation for MotorPH inventory system
-This meets the MotorPH requirements for inventory management system
+This is a sample code implementation for the MotorPH inventory system
+This meets the MotorPH requirements for an inventory management system
 - Add new stocks
 - Delete incorrect records
 - Sort stocks according to brand
