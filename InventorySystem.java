@@ -10,6 +10,7 @@ This meets the MotorPH requirements for an inventory management system
 - Search for existing inventory using available information (Search by brand)
 */
 
+// Inventory data class
 class InventoryData {
     String dateEntered;
     String stockLabel;
@@ -32,15 +33,6 @@ class InventoryData {
                 " || Engine Number: " + engineNumber +
                 " || Status: " + status);
     }
-
-    public void display() {
-        System.out.println("Date Entered: " + dateEntered +
-                "\nStock Label: " + stockLabel +
-                "\nBrand: " + brand +
-                "\nEngine Number: " + engineNumber +
-                "\nStatus: " + status);
-    }
-
 }
 
 public class InventorySystem {
@@ -48,7 +40,7 @@ public class InventorySystem {
         // Initialize Linked list
         LinkedList<InventoryData> inventoryData = new LinkedList<InventoryData>();
 
-        // Add data
+        // Add stocks to inventory list
         inventoryData.addFirst(new InventoryData("2/1/2023", "Old",
                 "Honda", "142QVTSIUR", "On-Hand"));
         inventoryData.addFirst(new InventoryData("2/1/2023", "Old",
