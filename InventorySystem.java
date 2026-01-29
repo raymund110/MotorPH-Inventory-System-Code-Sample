@@ -9,7 +9,7 @@ This meets the MotorPH requirements for an inventory management system
 - Sort stocks according to brand
 - Search for existing inventory using available information (Search by brand)
 
-THIS CODE MAINLY FOCUS ON THE FUNCTION OF AN INVENTORY SYSTEM FOR MOTORPH
+THIS CODE MAINLY FOCUSES ON THE FUNCTION OF AN INVENTORY SYSTEM FOR MOTORPH
 */
 
 // Inventory data class
@@ -27,7 +27,7 @@ class InventoryData {
         this.engineNumber = engineNumber;
         this.status = status;
     }
-
+    // Display the list in a line
     public void displayOneLine() {
         System.out.println("Date Entered: " + dateEntered +
                 " || Stock Label: " + stockLabel +
@@ -79,7 +79,7 @@ public class InventorySystem {
 
         // Search function
         System.out.println("\n========= Search By Brand =============\n");
-        // If brand was found it will print every product with the same brand
+        // If the brand is found, it will print every product with the same brand
         String searchByBrand = "Kymco";
         for (InventoryData inventory : inventoryData) {
             if (inventory.brand.equals(searchByBrand)) {
@@ -99,7 +99,7 @@ public class InventorySystem {
                 toRemove = inventory;
                 break;
             }
-        } // If object was found it will delete the node
+        } // If object was found, it will delete the node
         if (toRemove != null) {
             inventoryData.remove(toRemove);
             System.out.println("Item with engine number " + itemToDelete + " has been removed");
@@ -107,7 +107,7 @@ public class InventorySystem {
             System.out.println("Item not found.");
         }
 
-        // Print the list after delete function
+        // Print the list after the delete function
         System.out.println("\n========= After deletion =============\n");
         for (InventoryData inventory : inventoryData) {
             System.out.println("---------------------");
@@ -118,7 +118,7 @@ public class InventorySystem {
         // Check deletion if successful
         String searchByEngine = "95AN3AWVF4";
         for (InventoryData inventory : inventoryData) {
-            // If deletion fail there will be result
+            // If deletion fail there will be a result
             if (inventory.engineNumber.equals(searchByEngine)) {
                 inventory.displayOneLine();
                 break;
