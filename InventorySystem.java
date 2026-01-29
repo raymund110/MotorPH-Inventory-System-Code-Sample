@@ -8,6 +8,8 @@ This meets the MotorPH requirements for an inventory management system
 - Delete incorrect records
 - Sort stocks according to brand
 - Search for existing inventory using available information (Search by brand)
+
+THIS CODE MAINLY FOCUS ON THE FUNCTION OF AN INVENTORY SYSTEM FOR MOTORPH
 */
 
 // Inventory data class
