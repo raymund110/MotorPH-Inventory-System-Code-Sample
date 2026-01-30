@@ -85,9 +85,7 @@ public class InventorySystem {
             if (inventory.brand.equals(searchByBrand)) {
                 inventory.displayOneLine();
                 System.out.println("---------------------\n");
-            } else {
-                System.out.println(searchByBrand + " not found.");
-            }
+            } 
         }
 
         // Delete function. Engine number as node identifier
